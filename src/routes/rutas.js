@@ -26,4 +26,17 @@ router.get("/rutaPokemon", function (req, res) {
   );
 });
 
+router.post("/rutaPOST", function (req, res) {
+  console.log("Hola, estamos de pruebas en la ruta POST.");
+  res.send("Hola, estamos usando una ruta POST");
+});
+
+router.post("/rutaPOSTbody", function (req, res) {
+  req.body = "pruebas del request";
+  console.log("Hola, estamos de pruebas en la ruta POST con body.");
+  res.json({
+    saludo: "Estamos usando el json a traves de request body",
+  });
+});
+
 module.exports = router;
