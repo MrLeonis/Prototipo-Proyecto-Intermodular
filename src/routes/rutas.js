@@ -31,6 +31,34 @@ router.post("/rutaPOST", function (req, res) {
   res.send("Hola, estamos usando una ruta POST");
 });
 
+router.post("/rutaPOSTdeYugi", function (req, res) {
+  console.log(
+    "El primer set oficial de estas cartas salio al mercado el 8 de Marzo de 2002."
+  );
+  res.send("Hola, estamos usando la ruta POST de Yu-gi-Oh!");
+});
+
+router.post("/rutaPOSTdeMagic", function (req, res) {
+  console.log(
+    "El primer set oficial de estas cartas salio al mercado el 5 de Agosto de 1993."
+  );
+  res.send("Hola, estamos usando la ruta POST de Magic");
+});
+
+router.post("/rutaPOSTdePokemon", function (req, res) {
+  console.log(
+    "El primer set oficial de estas cartas salio al mercado el 20 de Octubre de 1996."
+  );
+  res.send("Hola, estamos usando la ruta POST de Pokemon");
+});
+
+router.post("/rutaPOSTdeStarWars", function (req, res) {
+  console.log(
+    "El primer set oficial de estas cartas salio al mercado el 8 de Marzo de 2024."
+  );
+  res.send("Hola, estamos usando la ruta POST de Star Wars:Unlimited");
+});
+
 router.post("/rutaPOSTbody", function (req, res) {
   req.body = "pruebas del request";
   console.log("Hola, estamos de pruebas en la ruta POST con body.");
